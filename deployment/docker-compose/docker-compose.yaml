@@ -1,0 +1,8 @@
+oracle:
+  image: container-registry.oracle.com/database/free:latest
+  ports:
+    - "1521:1521"
+  volumes:
+    - data:/opt/oracle/oradata
+  environment:
+    - ORACLE_PWD=oracle
